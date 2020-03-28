@@ -1,0 +1,30 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+}
+
+.swiper-slide {
+    display: block;
+}
+
+IonSlide {
+    height: auto;
+}
+
+IonSlide>h2 {
+    margin-top: 2.8rem;
+}
+
+IonSlide>img {
+    max-height: 50%;
+    max-width: 60%;
+    margin: 36px 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
