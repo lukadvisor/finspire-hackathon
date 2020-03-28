@@ -20,7 +20,7 @@ const Result: React.FC = (props) => {
         <IonPage>
             <IonHeader translucent>
                 <IonToolbar>
-                    <IonTitle>Mortgage Calculcator &amp; Planner</IonTitle>
+                    <IonTitle>Virtual Expert</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
@@ -87,6 +87,12 @@ const Result: React.FC = (props) => {
                         {mortgageResponse}
                     </IonCardContent>
                 </IonCard>
+
+                <IonButton color="warning" expand="block" onClick={() => window.open("http://www.google.com", '_blank')}>
+                    Talk to Virtual Property Expert
+                <IonRippleEffect></IonRippleEffect>
+                </IonButton>
+
 
             </IonContent>
 
