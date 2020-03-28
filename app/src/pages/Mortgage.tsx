@@ -20,7 +20,7 @@ const Result: React.FC = (props) => {
         <IonPage>
             <IonHeader translucent>
                 <IonToolbar>
-                    <IonTitle>Mortgage Loan Application</IonTitle>
+                    <IonTitle>Mortgage Calculcator &amp; Planner</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
@@ -55,16 +55,21 @@ const Result: React.FC = (props) => {
                     </IonItem>
 
                     <IonItem>
-                        <IonLabel position="stacked">Address <IonText color="danger">*</IonText></IonLabel>
+                        <IonLabel position="stacked">Income <IonText color="danger">*</IonText></IonLabel>
                         <IonInput required type="text" onIonInput={(e: any) => setAddress(e.target.value)}></IonInput>
                     </IonItem>
 
                     <IonItem>
-                        <IonLabel>Plan Type <IonText color="danger">*</IonText></IonLabel>
+                        <IonLabel position="stacked">Expenditure <IonText color="danger">*</IonText></IonLabel>
+                        <IonInput required type="text" onIonInput={(e: any) => setAddress(e.target.value)}></IonInput>
+                    </IonItem>
+
+                    <IonItem>
+                        <IonLabel>Expected Payment Schedule <IonText color="danger">*</IonText></IonLabel>
                         <IonSelect value="brown" okText="Okay" cancelText="Dismiss" onIonChange={(e: any) => setPlan(e.target.value)}>
-                            <IonSelectOption value="PLAN_1">PLAN_1</IonSelectOption>
-                            <IonSelectOption value="PLAN_2">PLAN_2</IonSelectOption>
-                            <IonSelectOption value="PLAN_3">PLAN_3</IonSelectOption>
+                            <IonSelectOption value="PLAN_1">Monthly</IonSelectOption>
+                            <IonSelectOption value="PLAN_2">Bi-monthly</IonSelectOption>
+                            <IonSelectOption value="PLAN_3">Yearly</IonSelectOption>
                         </IonSelect>
                     </IonItem>
 
