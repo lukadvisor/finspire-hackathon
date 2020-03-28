@@ -81,7 +81,7 @@ const Result: React.FC = (props) => {
 
                 <IonCard>
                     <IonCardHeader>
-                        <IonCardTitle>Response</IonCardTitle>
+                        <IonCardTitle>Result</IonCardTitle>
                     </IonCardHeader>
                     <IonCardContent>
                         {mortgageResponse}
