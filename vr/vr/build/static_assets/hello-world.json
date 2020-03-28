@@ -19,10 +19,8 @@
 				{
 					"card":[
 						{"type":"image","src":"coffee-machine.jpg","ratio":1},
-						{"type":"header","txt":"What is it?"},
-						{"type":"content","txt":"A cinematic VR experience framework.\nOr simpler: A new media format."},
-						{"type":"content","txt":"Easier than game engines. More interactive than video streaming. More creative than scanning. Immersive on both VR and web-phone. Create with any camera. Open source. Static build, so no hosting lock-in. Simple JSON markup. Extend with custom code. For starters!"}
-
+						{"type":"header","txt":"Convoy property visit VR experience"},
+						{"type":"content","txt":"A cinematic VR experience for Convoy property."}
 					],
 					"rotateY":193
 				}
