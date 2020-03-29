@@ -65,6 +65,11 @@ const Result: React.FC = (props) => {
                     </IonItem>
 
                     <IonItem>
+                        <IonLabel position="stacked">Expected Payment Period <IonText color="danger">*</IonText></IonLabel>
+                        <IonInput required type="date" onIonInput={(e: any) => setAddress(e.target.value)}></IonInput>
+                    </IonItem>
+
+                    <IonItem>
                         <IonLabel>Expected Payment Schedule <IonText color="danger">*</IonText></IonLabel>
                         <IonSelect value="brown" okText="Okay" cancelText="Dismiss" onIonChange={(e: any) => setPlan(e.target.value)}>
                             <IonSelectOption value="PLAN_1">Monthly</IonSelectOption>
