@@ -1,9 +1,12 @@
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonInput, IonItem, IonLabel, IonList, IonPage, IonRippleEffect, IonSelect, IonSelectOption, IonText, IonTitle, IonToolbar } from '@ionic/react';
-import React from 'react';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonInput, IonItem, IonLabel, IonList, IonPage, IonRippleEffect, IonSelect, IonSelectOption, IonText, IonTitle, IonToolbar, IonGrid, IonRow, IonCol, IonCardSubtitle } from '@ionic/react';
+import React, { useState } from 'react';
 import { useDataContext } from '../context/dataContext';
 import './Mortgage.css';
 
 const Result: React.FC = (props) => {
+
+    const [showResult, setShowResult] = useState(false);
+
     const {
         setName,
         setId,
@@ -78,7 +81,11 @@ const Result: React.FC = (props) => {
                         </IonSelect>
                     </IonItem>
 
-                    <IonButton color="warning" expand="block" onClick={() => RunMortgage()}>
+                    <IonButton color="warning" expand="block" onClick={() => {
+                        RunMortgage()
+                        setShowResult(true)
+                    }
+                    }>
                         APPLY
                 <IonRippleEffect></IonRippleEffect>
                     </IonButton>
@@ -92,6 +99,29 @@ const Result: React.FC = (props) => {
                         {mortgageResponse}
                     </IonCardContent>
                 </IonCard>
+
+                {showResult && (
+                    <IonCard>
+                        <IonCardContent>
+                            <IonGrid>
+                                <IonRow>
+                                    <IonCol size="4"><IonCardTitle>63</IonCardTitle></IonCol>
+                                    <IonCol size="8"><IonCardSubtitle color="warning">9/24/2023</IonCardSubtitle></IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol size="4"><b>Beginning Balance:</b></IonCol>
+                                    <IonCol size="4"><b>Scheduled Payment:</b></IonCol>
+                                    <IonCol size="4"><b>Extra Payment:</b></IonCol>
+                                </IonRow>
+                                <IonRow>
+                                    <IonCol size="4">$102,039.16</IonCol>
+                                    <IonCol size="4">$2,121.31</IonCol>
+                                    <IonCol size="4">$100.00</IonCol>
+                                </IonRow>
+                            </IonGrid>
+                        </IonCardContent>
+                    </IonCard>
+                )}
 
                 <IonButton color="warning" expand="block" onClick={() => window.open("https://webchat.botframework.com/embed/convoice-bot/gemini?b=convoice-bot&s=mSHupLvltF0.5YXxafvsd-szE9dcRjqFQt_itglamKz1JHlgXuuCKsQ&username=You", '_blank')}>
                     Talk to Virtual Property Expert
