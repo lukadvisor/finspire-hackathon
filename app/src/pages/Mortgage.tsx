@@ -101,26 +101,49 @@ const Result: React.FC = (props) => {
                 </IonCard>
 
                 {showResult && (
-                    <IonCard>
-                        <IonCardContent>
-                            <IonGrid>
-                                <IonRow>
-                                    <IonCol size="4"><IonCardTitle>63</IonCardTitle></IonCol>
-                                    <IonCol size="8"><IonCardSubtitle color="warning">9/24/2023</IonCardSubtitle></IonCol>
-                                </IonRow>
-                                <IonRow>
-                                    <IonCol size="4"><b>Beginning Balance:</b></IonCol>
-                                    <IonCol size="4"><b>Scheduled Payment:</b></IonCol>
-                                    <IonCol size="4"><b>Extra Payment:</b></IonCol>
-                                </IonRow>
-                                <IonRow>
-                                    <IonCol size="4">$102,039.16</IonCol>
-                                    <IonCol size="4">$2,121.31</IonCol>
-                                    <IonCol size="4">$100.00</IonCol>
-                                </IonRow>
-                            </IonGrid>
-                        </IonCardContent>
-                    </IonCard>
+                    <div>
+                        <IonCard>
+                            <IonCardContent>
+                                <IonGrid>
+                                    <IonRow>
+                                        <IonCol size="4"><IonCardTitle>63</IonCardTitle></IonCol>
+                                        <IonCol size="8"><IonCardSubtitle color="warning">24/9/2023</IonCardSubtitle></IonCol>
+                                    </IonRow>
+                                    <IonRow>
+                                        <IonCol size="4"><b>Beginning Balance:</b></IonCol>
+                                        <IonCol size="4"><b>Scheduled Payment:</b></IonCol>
+                                        <IonCol size="4"><b>Extra Payment:</b></IonCol>
+                                    </IonRow>
+                                    <IonRow>
+                                        <IonCol size="4">$102,039.16</IonCol>
+                                        <IonCol size="4">$2,121.31</IonCol>
+                                        <IonCol size="4">$100.00</IonCol>
+                                    </IonRow>
+                                </IonGrid>
+                            </IonCardContent>
+                        </IonCard>
+
+                        <IonCard>
+                            <IonCardContent>
+                                <IonGrid>
+                                    <IonRow>
+                                        <IonCol size="4"><IonCardTitle>71</IonCardTitle></IonCol>
+                                        <IonCol size="8"><IonCardSubtitle color="warning">24/5/2024</IonCardSubtitle></IonCol>
+                                    </IonRow>
+                                    <IonRow>
+                                        <IonCol size="4"><b>Beginning Balance:</b></IonCol>
+                                        <IonCol size="4"><b>Scheduled Payment:</b></IonCol>
+                                        <IonCol size="4"><b>Extra Payment:</b></IonCol>
+                                    </IonRow>
+                                    <IonRow>
+                                        <IonCol size="4">$87,458.16</IonCol>
+                                        <IonCol size="4">$2,121.31</IonCol>
+                                        <IonCol size="4">$100.00</IonCol>
+                                    </IonRow>
+                                </IonGrid>
+                            </IonCardContent>
+                        </IonCard>
+                    </div>
                 )}
 
                 <IonButton color="warning" expand="block" onClick={() => window.open("https://webchat.botframework.com/embed/convoice-bot/gemini?b=convoice-bot&s=mSHupLvltF0.5YXxafvsd-szE9dcRjqFQt_itglamKz1JHlgXuuCKsQ&username=You", '_blank')}>
