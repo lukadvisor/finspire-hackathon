@@ -75,7 +75,7 @@ const Result: React.FC = (props) => {
                     8 records
                 </IonCardContent>
                   <IonItem>
-                    <a href="https://bocvr.netlify.com">
+                    <a href="https://realz-vr.netlify.com/">
                       <IonButton fill="outline" slot="end">View</IonButton>
                     </a>
                   </IonItem>
@@ -96,7 +96,7 @@ const Result: React.FC = (props) => {
                     15 records
                 </IonCardContent>
                   <IonItem>
-                    <a href="https://bocvr.netlify.com">
+                    <a href="https://realz-vr.netlify.com/">
                       <IonButton fill="outline" slot="end">View</IonButton>
                     </a>
                   </IonItem>
