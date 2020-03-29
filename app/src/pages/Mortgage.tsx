@@ -88,7 +88,7 @@ const Result: React.FC = (props) => {
                     </IonCardContent>
                 </IonCard>
 
-                <IonButton color="warning" expand="block" onClick={() => window.open("http://www.google.com", '_blank')}>
+                <IonButton color="warning" expand="block" onClick={() => window.open("https://webchat.botframework.com/embed/convoice-bot/gemini?b=convoice-bot&s=mSHupLvltF0.5YXxafvsd-szE9dcRjqFQt_itglamKz1JHlgXuuCKsQ&username=You", '_blank')}>
                     Talk to Virtual Property Expert
                 <IonRippleEffect></IonRippleEffect>
                 </IonButton>
